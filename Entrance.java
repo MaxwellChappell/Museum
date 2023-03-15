@@ -1,11 +1,9 @@
-public class Gallery implements Counted {
+public class Entrance implements Counted {
     private String name;
-    private Art[] art;
     private int count;
 
-    public Gallery(String name, Art[] art) {
+    public Entrance(String name) {
         this.name = name;
-        this.art = art;
         this.count = 0;
     }
 
@@ -30,13 +28,5 @@ public class Gallery implements Counted {
 
     public String getName() {
         return this.name;
-    }
-
-    public String toString() {
-        String rString = name + "\n";
-        for (Art a : art) {
-            rString += "\t" + a + "\n";
-        }
-        return rString;
     }
 }
