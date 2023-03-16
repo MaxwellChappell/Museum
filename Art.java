@@ -10,7 +10,7 @@ public class Art {
     }
 
     public String toString() {
-        String rString = this.name + ", " + this.year + "' " + this.artistName;
+        String rString = this.name + ", " + this.year + ", " + this.artistName;
         return rString;
     }
 }
